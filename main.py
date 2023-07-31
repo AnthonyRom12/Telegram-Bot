@@ -68,7 +68,7 @@ async def help_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
                                      "* str\n"
                                      "* bool")
 
-   
+
 async def message_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
     msg = updater.message.text
     # print(msg)
