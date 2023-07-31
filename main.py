@@ -68,11 +68,7 @@ async def help_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
                                      "* str\n"
                                      "* bool")
 
-    # def reply(message):
-    #     message = python_hash_table.get(message)
-    #     print(message)
-
-
+   
 async def message_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
     msg = updater.message.text
     # print(msg)
@@ -82,9 +78,10 @@ async def message_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
     else:
         await updater.message.reply_text("Oops something went wrong, try again!")
 
-    # Echo functions for creating echo bot
-    # async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    #     await context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
+
+# Echo functions for creating echo bot
+# async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
+#     await context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
 
 
 if __name__ == '__main__':
