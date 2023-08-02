@@ -46,4 +46,11 @@ python_hash_table = {
             'When you compare two values, the expression is evaluated and Python returns the Boolean answer:'
 }
 
+java_hash_table = {
+
+}
+
+cpp_hash_table = {
+
+}
 # print(python_hash_table.get('for'))
