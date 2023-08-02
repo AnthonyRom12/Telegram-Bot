@@ -38,39 +38,42 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     await query.answer()
     if query.data == 'Python':
-        pyth0n_button = [
-            [InlineKeyboardButton("for", callback_data='for'),
-             InlineKeyboardButton("while", callback_data='2'),
-             InlineKeyboardButton("def", callback_data='3'),
-             InlineKeyboardButton("generator", callback_data='4'),
-             InlineKeyboardButton("Numbers", callback_data='5')],
-            [InlineKeyboardButton("tuple", callback_data='6'),
-             InlineKeyboardButton("dictionary", callback_data='7'),
-             InlineKeyboardButton("lamda", callback_data='8')],
-            [InlineKeyboardButton("array", callback_data='9'),
-             InlineKeyboardButton("str", callback_data='10'),
-             InlineKeyboardButton("bool", callback_data='11')],
-        ]
+        # pyth0n_button = [
+        #     [InlineKeyboardButton("for", callback_data='for'),
+        #      InlineKeyboardButton("while", callback_data='2'),
+        #      InlineKeyboardButton("def", callback_data='3'),
+        #      InlineKeyboardButton("generator", callback_data='4'),
+        #      InlineKeyboardButton("Numbers", callback_data='5')],
+        #     [InlineKeyboardButton("tuple", callback_data='6'),
+        #      InlineKeyboardButton("dictionary", callback_data='7'),
+        #      InlineKeyboardButton("lamda", callback_data='8')],
+        #     [InlineKeyboardButton("array", callback_data='9'),
+        #      InlineKeyboardButton("str", callback_data='10'),
+        #      InlineKeyboardButton("bool", callback_data='11')],
+        # ]
+        #
+        # markup_button = InlineKeyboardMarkup(pyth0n_button)
+        # await query.edit_message_text(text='Python', reply_markup=markup_button)
 
-        markup_button = InlineKeyboardMarkup(pyth0n_button)
-        await query.edit_message_text(text='Python', reply_markup=markup_button)
-
-        # await query.edit_message_text(text=f"Selected option: {query.data},\n Use follow command to get more"
-        #                                    f"information: (Without asteriks)\n "
-        #                                    "* for\n"
-        #                                    "* for_statement_example\n"
-        #                                    "* while\n"
-        #                                    "* while_example\n"
-        #                                    "* tuple\n"
-        #                                    "* def\n"
-        #                                    "* list\n"
-        #                                    "* array\n"
-        #                                    "* generator\n"
-        #                                    "* dictionary\n"
-        #                                    "* lambda\n"
-        #                                    "* Numbers\n"
-        #                                    "* str\n"
-        #                                    "* bool")
+        await query.edit_message_text(text=f"Selected option: {query.data},\n Use follow command to get more"
+                                           f"information: (Without asteriks)\n "
+                                           "* for\n"
+                                           "* for_statement_example\n"
+                                           "* while\n"
+                                           "* while_example\n"
+                                           "* tuple\n"
+                                           "* def\n"
+                                           "* list\n"
+                                           "* array\n"
+                                           "* generator\n"
+                                           "* dictionary\n"
+                                           "* lambda\n"
+                                           "* Numbers\n"
+                                           "* str\n"
+                                           "* bool"
+                                           "* class\n"
+                                           "* polymorphism\n"
+                                           "* inheritance")
     if query.data == 'Java':
         await query.edit_message_text(text=f"Selected option: {query.data},\n Sorry, but updating still in progress!"
                                            f" "f"Try other commands! ")
@@ -95,7 +98,10 @@ async def help_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
                                      "* lambda\n"
                                      "* Numbers\n"
                                      "* str\n"
-                                     "* bool")
+                                     "* bool\n"
+                                     "* class\n"
+                                     "* polymorphism\n"
+                                     "* inheritance")
 
 
 async def message_(updater: Update, context: ContextTypes.DEFAULT_TYPE):

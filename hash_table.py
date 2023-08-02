@@ -43,7 +43,17 @@ python_hash_table = {
            'You can display a string literal with the print() function:',
     'bool': 'In programming you often need to know if an expression is True or False.\n'
             'You can evaluate any expression in Python, and get one of two answers, True or False.\n'
-            'When you compare two values, the expression is evaluated and Python returns the Boolean answer:'
+            'When you compare two values, the expression is evaluated and Python returns the Boolean answer:',
+    'class': 'Python is an object oriented programming language.\n'
+             'Almost everything in Python is an object, with its properties and methods.\n'
+             'A Class is like an object constructor, or a "blueprint" for creating objects.',
+    'polymorphism': 'The word "polymorphism" means "many forms", and in programming it refers to '
+                     'methods/functions/operators with the same name that can be executed on many objects or classes',
+    'inheritance': 'Inheritance allows us to define a class that inherits all the methods and properties from another '
+                   'class.\n '
+                   'Parent class is the class being inherited from, also called base class.\n'
+                   'Child class is the class that inherits from another class, also called derived class.'
+
 }
 
 java_hash_table = {
