@@ -37,32 +37,34 @@ async def button(update: Update, context: CallbackContext):
     query = update.callback_query
     data = query.data
 
-    # await query.answer()
+    python_button = [
+        [InlineKeyboardButton("for", callback_data='for'),
+         InlineKeyboardButton("while", callback_data='while'),
+         InlineKeyboardButton("def", callback_data='def'),
+         InlineKeyboardButton("generator", callback_data='generator'),
+         InlineKeyboardButton("Numbers", callback_data='Numbers')],
+        [InlineKeyboardButton("tuple", callback_data='tuple'),
+         InlineKeyboardButton("dictionary", callback_data='dictionary'),
+         InlineKeyboardButton("lambda", callback_data='lambda')],
+        [InlineKeyboardButton("array", callback_data='array'),
+         InlineKeyboardButton("str", callback_data='str'),
+         InlineKeyboardButton("bool", callback_data='bool')],
+        [InlineKeyboardButton("class", callback_data='class'),
+         InlineKeyboardButton("polymorphism", callback_data='polymorphism'),
+         InlineKeyboardButton("inheritance", callback_data='inheritance')]
+    ]
+    markup_button = InlineKeyboardMarkup(python_button)
+
     if data == 'Python':
-        python_button = [
-            [InlineKeyboardButton("for", callback_data='for'),
-             InlineKeyboardButton("while", callback_data='while'),
-             InlineKeyboardButton("def", callback_data='def'),
-             InlineKeyboardButton("generator", callback_data='generator'),
-             InlineKeyboardButton("Numbers", callback_data='Numbers')],
-            [InlineKeyboardButton("tuple", callback_data='tuple'),
-             InlineKeyboardButton("dictionary", callback_data='dictionary'),
-             InlineKeyboardButton("lambda", callback_data='lambda')],
-            [InlineKeyboardButton("array", callback_data='array'),
-             InlineKeyboardButton("str", callback_data='str'),
-             InlineKeyboardButton("bool", callback_data='bool')],
-            [InlineKeyboardButton("class", callback_data='class'),
-             InlineKeyboardButton("polymorphism", callback_data='polymorphism'),
-             InlineKeyboardButton("inheritance", callback_data='inheritance')]
-        ]
-
-        markup_button = InlineKeyboardMarkup(python_button)
         await query.edit_message_text(text='Python', reply_markup=markup_button)
-
-    elif data == 'for':  # TODO: message too long
+    elif data == 'for':
         info = python_hash_table.get(data)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+            ]
+        back_button = InlineKeyboardMarkup(back)
         # await query.answer(text=info, show_alert=True)
-        await query.edit_message_text(text=info)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'while':
         info = python_hash_table.get('while')
         await query.answer(text=info, show_alert=True)
@@ -75,45 +77,81 @@ async def button(update: Update, context: CallbackContext):
     elif data == 'list':
         info = python_hash_table.get('list')
         await query.answer(text=info, show_alert=True)
-    elif data == 'tuple':  # TODO: message too long
+    elif data == 'tuple':
         info = python_hash_table.get('tuple')
-        await query.answer(text=info, show_alert=True)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        # await query.answer(text=info, show_alert=True)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'generator':
         info = python_hash_table.get('generator')
         await query.answer(text=info, show_alert=True)
-    elif data == 'dictionary':  # TODO: message too long
+    elif data == 'dictionary':
         info = python_hash_table.get('dictionary')
-        await query.answer(text=info, show_alert=True)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        # await query.answer(text=info, show_alert=True)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'lambda':
         info = python_hash_table.get('lambda')
         await query.answer(text=info, show_alert=True)
     elif data == 'str':
         info = python_hash_table.get('str')
         await query.answer(text=info, show_alert=True)
-    elif data == 'bool':  # TODO: message too long
+    elif data == 'bool':
         info = python_hash_table.get('bool')
-        await query.answer(text=info, show_alert=True)
-    elif data == 'class':  # TODO: message too long
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        # await query.answer(text=info, show_alert=True)
+        await query.edit_message_text(text=info, reply_markup=back_button)
+    elif data == 'class':
         info = python_hash_table.get('class')
-        await query.answer(text=info, show_alert=True)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        # await query.answer(text=info, show_alert=True)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'polymorphism':
         info = python_hash_table.get('polymorphism')
         await query.answer(text=info, show_alert=True)
-    elif data == 'inheritance':  # TODO: message too long
+    elif data == 'inheritance':
         info = python_hash_table.get('inheritance')
-        await query.answer(text=info, show_alert=True)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        # await query.answer(text=info, show_alert=True)
+        await query.edit_message_text(text=info, reply_markup=back_button)
+    elif data == 'back':
+        await query.edit_message_text(text='Python', reply_markup=markup_button)
 
     if data == 'Java':
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
         await query.edit_message_text(text=f"Selected option: {query.data},\n Sorry, but updating still in progress!"
-                                           f" "f"Try other commands! ")
+                                           f" "f"Try other commands! ", reply_markup=back_button)
 
     if data == 'C++':
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
         await query.edit_message_text(text=f"Selected option: {query.data},\n Sorry, but updating still in progress! "
-                                           f"Try other commands! ")
+                                           f"Try other commands! ", reply_markup=back_button)
 
 
 async def help_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
-    await updater.message.reply_text("Hi, Use one of the follow command to get more information: (Without asteriks)\n"
+    await updater.message.reply_text("Hi! We have few different ways of working our bot: Use one of the follow "
+                                     "command to get more information: (Without asteriks)\n "
                                      "* for\n"
                                      "* for_statement_example\n"
                                      "* while\n"
@@ -130,7 +168,8 @@ async def help_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
                                      "* bool\n"
                                      "* class\n"
                                      "* polymorphism\n"
-                                     "* inheritance")
+                                     "* inheritance\n"
+                                     "or you can use Inline Buttons! Good luck!")
 
 
 async def message_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -143,15 +182,9 @@ async def message_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
         await updater.message.reply_text("Oops something went wrong, try again!")
 
 
-# Echo functions for creating echo bot
-# async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
-#     await context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
-
-
 if __name__ == '__main__':
     application = ApplicationBuilder().token(API_TOKEN).build()
 
-    # echo_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), echo)
     start_handler = CommandHandler('start', start)
     help_handler = CommandHandler('help', help_)
     button_handler = CallbackQueryHandler(button)
@@ -159,7 +192,7 @@ if __name__ == '__main__':
     application.add_handler(button_handler)
     application.add_handler(start_handler)
     application.add_handler(help_handler)
-    # application.add_handler(echo_handler)
+
     application.add_handler(MessageHandler(filters.TEXT, message_))
 
     application.run_polling()
