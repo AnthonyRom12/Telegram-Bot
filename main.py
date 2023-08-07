@@ -1,5 +1,4 @@
 import logging
-import telegram
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import CallbackContext, filters, ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, CallbackQueryHandler
 from access import API_TOKEN
@@ -67,16 +66,32 @@ async def button(update: Update, context: CallbackContext):
         await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'while':
         info = python_hash_table.get('while')
-        await query.answer(text=info, show_alert=True)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'def':
         info = python_hash_table.get('def')
-        await query.answer(text=info, show_alert=True)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'array':
         info = python_hash_table.get('array')
-        await query.answer(text=info, show_alert=True)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'list':
         info = python_hash_table.get('list')
-        await query.answer(text=info, show_alert=True)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'tuple':
         info = python_hash_table.get('tuple')
         back = [
@@ -87,7 +102,11 @@ async def button(update: Update, context: CallbackContext):
         await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'generator':
         info = python_hash_table.get('generator')
-        await query.answer(text=info, show_alert=True)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'dictionary':
         info = python_hash_table.get('dictionary')
         back = [
@@ -98,10 +117,19 @@ async def button(update: Update, context: CallbackContext):
         await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'lambda':
         info = python_hash_table.get('lambda')
-        await query.answer(text=info, show_alert=True)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'str':
         info = python_hash_table.get('str')
-        await query.answer(text=info, show_alert=True)
+        info = python_hash_table.get('inheritance')
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'bool':
         info = python_hash_table.get('bool')
         back = [
@@ -120,7 +148,11 @@ async def button(update: Update, context: CallbackContext):
         await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'polymorphism':
         info = python_hash_table.get('polymorphism')
-        await query.answer(text=info, show_alert=True)
+        back = [
+            [InlineKeyboardButton("back", callback_data="back")]
+        ]
+        back_button = InlineKeyboardMarkup(back)
+        await query.edit_message_text(text=info, reply_markup=back_button)
     elif data == 'inheritance':
         info = python_hash_table.get('inheritance')
         back = [
