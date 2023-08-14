@@ -57,6 +57,8 @@ python_hash_table = {
 }
 
 java_hash_table = {
+    'string': 'Strings are the type of objects that can store the character of values. A string acts the same as an '
+              'array of characters in Java. '
 
 }
 

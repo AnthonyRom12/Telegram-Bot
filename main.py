@@ -1,12 +1,13 @@
 import logging
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import CallbackContext, filters, ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, CallbackQueryHandler
+from telegram.ext import CallbackContext, filters, ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, \
+    CallbackQueryHandler
 from access import API_TOKEN
 from hash_table import python_hash_table
-
+from Button import *
 
 # Enable logging
-logging.basicConfig(
+logging.basicConfig(filename='bot.log',
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
 # set higher logging level for httpx to avoid all GET and POST requests being logged
@@ -36,23 +37,32 @@ async def button(update: Update, context: CallbackContext):
     query = update.callback_query
     data = query.data
 
-    python_button = [
-        [InlineKeyboardButton("for", callback_data='for'),
-         InlineKeyboardButton("while", callback_data='while'),
-         InlineKeyboardButton("def", callback_data='def'),
-         InlineKeyboardButton("generator", callback_data='generator'),
-         InlineKeyboardButton("Numbers", callback_data='Numbers')],
-        [InlineKeyboardButton("tuple", callback_data='tuple'),
-         InlineKeyboardButton("dictionary", callback_data='dictionary'),
-         InlineKeyboardButton("lambda", callback_data='lambda')],
-        [InlineKeyboardButton("array", callback_data='array'),
-         InlineKeyboardButton("str", callback_data='str'),
-         InlineKeyboardButton("bool", callback_data='bool')],
-        [InlineKeyboardButton("class", callback_data='class'),
-         InlineKeyboardButton("polymorphism", callback_data='polymorphism'),
-         InlineKeyboardButton("inheritance", callback_data='inheritance')]
-    ]
-    markup_button = InlineKeyboardMarkup(python_button)
+    python_button = MyInlineKeyBoard(
+        [
+            MyInlineButton("for", callbackData='for'),
+            MyInlineButton("while", callbackData='while'),
+            MyInlineButton("def", callbackData='def'),
+            MyInlineButton("generator", callbackData='generator'),
+            MyInlineButton('Numbers', callbackData='Numbers')
+        ],
+        [
+            MyInlineButton("tuple", callbackData='tuple'),
+            MyInlineButton("dictionary", callbackData='dictionary'),
+            MyInlineButton("lambda", callbackData='lambda')
+        ],
+        [
+            MyInlineButton("array", callbackData='array'),
+            MyInlineButton("str", callbackData='str'),
+            MyInlineButton("bool", callbackData='bool')
+        ],
+        [
+            MyInlineButton("class", callbackData='class'),
+            MyInlineButton("polymorphism", callbackData='polymorphism'),
+            MyInlineButton("inheritance", callbackData='inheritance')
+        ]
+    )
+
+    markup_button = python_button.get_keyboard()
 
     if data == 'Python':
         await query.edit_message_text(text='Python', reply_markup=markup_button)
@@ -60,7 +70,7 @@ async def button(update: Update, context: CallbackContext):
         info = python_hash_table.get(data)
         back = [
             [InlineKeyboardButton("back", callback_data="back")]
-            ]
+        ]
         back_button = InlineKeyboardMarkup(back)
         # await query.answer(text=info, show_alert=True)
         await query.edit_message_text(text=info, reply_markup=back_button)
