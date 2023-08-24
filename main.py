@@ -6,6 +6,7 @@ from access import API_TOKEN
 from hash_table import python_hash_table
 from Button import *
 
+
 # Enable logging
 logging.basicConfig(filename='bot.log',
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
