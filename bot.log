@@ -1,3 +1,6 @@
 2023-08-14 12:18:35,432 - telegram.ext.Application - INFO - Application started
 2023-08-14 12:18:57,734 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
 2023-08-14 12:18:57,734 - telegram.ext.Application - INFO - Application.stop() complete
+2023-08-29 14:16:33,941 - telegram.ext.Application - INFO - Application started
+2023-08-29 14:17:26,422 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-08-29 14:17:26,423 - telegram.ext.Application - INFO - Application.stop() complete

@@ -1,16 +1,16 @@
 import logging
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import Update
 from telegram.ext import CallbackContext, filters, ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, \
     CallbackQueryHandler
 from access import API_TOKEN
-from hash_table import python_hash_table
-from Button import *
+from version_1.hash_table import python_hash_table
+from version_1.Button import *
 
 
 # Enable logging
-logging.basicConfig(filename='bot.log',
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
-)
+logging.basicConfig(filename='../bot.log',
+                    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
+                    )
 # set higher logging level for httpx to avoid all GET and POST requests being logged
 logging.getLogger("httpx").setLevel(logging.WARNING)
 

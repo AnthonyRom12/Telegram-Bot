@@ -65,11 +65,4 @@ java_hash_table = {
 cpp_hash_table = {
 
 }
-# print(python_hash_table.get('for'))
-counter = 0
-a = 'Python is an object oriented programming language.\n Almost everything in Python is an object, ' \
-    'with its properties and methods.\n A Class is like an object constructor, or a "blueprint" for creating objects. '
-for i in a:
-    a.count(i)
-    counter += 1
-print(counter)
+
