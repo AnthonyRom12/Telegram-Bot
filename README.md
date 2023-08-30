@@ -41,7 +41,7 @@ CodeWithMe is created to provide developers with convenient access to informatio
 
 2. Navigate to the project folder:
 
-```cd dev-info-bot```
+```cd Telegram_Programming_Bot```
 
 3. Install dependencies:
 
@@ -49,7 +49,7 @@ CodeWithMe is created to provide developers with convenient access to informatio
 
 4. Run the bot:
 
-```python bot.py```
+```python main.py```
 
 
 ## License
