@@ -4,3 +4,593 @@
 2023-08-29 14:16:33,941 - telegram.ext.Application - INFO - Application started
 2023-08-29 14:17:26,422 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
 2023-08-29 14:17:26,423 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 12:14:54,323 - telegram.ext.Application - INFO - Application started
+2023-09-01 12:15:09,431 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 57, in message_
+    ans = python_hash_table.get(msg)
+NameError: name 'python_hash_table' is not defined
+2023-09-01 12:15:16,131 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 57, in message_
+    ans = python_hash_table.get(msg)
+NameError: name 'python_hash_table' is not defined
+2023-09-01 12:15:22,735 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 12:15:22,735 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 12:19:37,916 - telegram.ext.Application - INFO - Application started
+2023-09-01 12:19:49,975 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 12:19:49,975 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 12:25:35,294 - telegram.ext.Application - INFO - Application started
+2023-09-01 12:25:36,144 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 12:25:36,145 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 12:25:37,185 - telegram.ext.Application - INFO - Application started
+2023-09-01 12:26:15,765 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 12:26:15,765 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 13:38:08,595 - telegram.ext.Application - INFO - Application started
+2023-09-01 13:39:02,118 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 96, in message_
+    ans = python_hash_table.get(msg)
+NameError: name 'python_hash_table' is not defined
+2023-09-01 13:39:13,514 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 96, in message_
+    ans = python_hash_table.get(msg)
+NameError: name 'python_hash_table' is not defined
+2023-09-01 13:39:16,007 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 96, in message_
+    ans = python_hash_table.get(msg)
+NameError: name 'python_hash_table' is not defined
+2023-09-01 13:39:35,997 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 13:39:35,997 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 13:42:21,240 - telegram.ext.Application - INFO - Application started
+2023-09-01 13:42:29,900 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 96, in message_
+    ans = python_hash_table.get(msg)
+NameError: name 'python_hash_table' is not defined
+2023-09-01 13:43:06,057 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 96, in message_
+    ans = python_hash_table.get(msg)
+NameError: name 'python_hash_table' is not defined
+2023-09-01 13:43:10,560 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 13:43:10,561 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 14:03:19,562 - telegram.ext.Application - INFO - Application started
+2023-09-01 14:05:33,757 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 14:05:33,758 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 14:15:08,785 - telegram.ext.Application - INFO - Application started
+2023-09-01 14:17:43,758 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 14:17:43,758 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 14:20:50,415 - telegram.ext.Application - INFO - Application started
+2023-09-01 14:21:26,819 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 14:21:26,819 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 14:21:36,196 - telegram.ext.Application - INFO - Application started
+2023-09-01 14:21:57,014 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 14:21:57,014 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 14:23:05,693 - telegram.ext.Application - INFO - Application started
+2023-09-01 14:24:10,755 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 14:24:10,756 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 14:24:12,558 - telegram.ext.Application - INFO - Application started
+2023-09-01 14:26:24,472 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 14:26:24,473 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 14:32:11,482 - telegram.ext.Application - INFO - Application started
+2023-09-01 14:36:51,291 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 14:36:51,291 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 14:37:51,779 - telegram.ext.Application - INFO - Application started
+2023-09-01 14:38:32,238 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 14:38:32,239 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 14:38:34,026 - telegram.ext.Application - INFO - Application started
+2023-09-01 14:40:19,722 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 14:40:19,723 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 14:40:51,658 - telegram.ext.Application - INFO - Application started
+2023-09-01 14:41:12,738 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 14:41:12,738 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 15:10:53,748 - telegram.ext.Application - INFO - Application started
+2023-09-01 15:11:13,655 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 15:11:13,655 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 15:23:57,597 - telegram.ext.Application - INFO - Application started
+2023-09-01 15:25:22,033 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 15:25:22,033 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 15:25:43,159 - telegram.ext.Application - INFO - Application started
+2023-09-01 15:28:18,590 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 15:28:18,590 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 15:31:29,008 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getMe "HTTP/1.1 200 OK"
+2023-09-01 15:31:29,088 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/deleteWebhook "HTTP/1.1 200 OK"
+2023-09-01 15:31:29,089 - telegram.ext.Application - INFO - Application started
+2023-09-01 15:31:36,600 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-01 15:31:36,960 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/sendMessage "HTTP/1.1 200 OK"
+2023-09-01 15:31:38,745 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-01 15:31:42,366 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-01 15:31:52,447 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-01 15:32:01,695 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 15:32:01,695 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 15:32:31,699 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getMe "HTTP/1.1 200 OK"
+2023-09-01 15:32:31,797 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/deleteWebhook "HTTP/1.1 200 OK"
+2023-09-01 15:32:31,798 - telegram.ext.Application - INFO - Application started
+2023-09-01 15:32:37,003 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-01 15:32:37,316 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/sendMessage "HTTP/1.1 200 OK"
+2023-09-01 15:32:47,100 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-01 15:32:49,464 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-01 15:32:59,564 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-01 15:33:07,168 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 15:33:07,168 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 15:46:51,216 - telegram.ext.Application - INFO - Application started
+2023-09-01 15:47:01,895 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 15:47:01,895 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 16:09:09,142 - telegram.ext.Application - INFO - Application started
+2023-09-01 16:09:28,567 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 38, in start
+    await context.bot.send_message(chat_id=update.message.chat_id, reply_markup=markup, text='Choose Language')
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 2644, in send_message
+    return await super().send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 814, in send_message
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button url 'language_python' is invalid: wrong http url
+2023-09-01 16:13:46,527 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 16:13:46,527 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 16:13:48,963 - telegram.ext.Application - INFO - Application started
+2023-09-01 16:13:55,490 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 38, in start
+    await context.bot.send_message(chat_id=update.message.chat_id, reply_markup=markup, text='Choose Language')
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 2644, in send_message
+    return await super().send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 814, in send_message
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button url 'language_python' is invalid: wrong http url
+2023-09-01 16:16:27,941 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 16:16:27,941 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 16:16:29,922 - telegram.ext.Application - INFO - Application started
+2023-09-01 16:16:36,251 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 38, in start
+    await context.bot.send_message(chat_id=update.message.chat_id, reply_markup=markup, text='Choose Language')
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 2644, in send_message
+    return await super().send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 814, in send_message
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button url 'language_python' is invalid: wrong http url
+2023-09-01 16:18:16,104 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 38, in start
+    await context.bot.send_message(chat_id=update.message.chat_id, reply_markup=markup, text='Choose Language')
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 2644, in send_message
+    return await super().send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 814, in send_message
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button url 'language_python' is invalid: wrong http url
+2023-09-01 16:18:45,093 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 38, in start
+    await context.bot.send_message(chat_id=update.message.chat_id, reply_markup=markup, text='Choose Language')
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 2644, in send_message
+    return await super().send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 814, in send_message
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button url 'language_python' is invalid: wrong http url
+2023-09-01 16:19:33,173 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 16:19:33,173 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 16:26:24,704 - telegram.ext.Application - INFO - Application started
+2023-09-01 16:26:30,781 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 38, in start
+    await context.bot.send_message(chat_id=update.message.chat_id, reply_markup=markup, text='Choose Language')
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 2644, in send_message
+    return await super().send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 814, in send_message
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Inline keyboard button url 'language_python' is invalid: wrong http url
+2023-09-01 16:26:48,072 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 16:26:48,072 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 16:28:45,272 - telegram.ext.Application - INFO - Application started
+2023-09-01 16:28:51,626 - __main__ - INFO - Selected language: language_python
+2023-09-01 16:28:51,724 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 55, in select_language
+    await context.bot.edit_message_text(chat_id=update.callback_query.message.chat_id,
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 1493, in edit_message_text
+    return await super().edit_message_text(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 3388, in edit_message_text
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message to edit not found
+2023-09-01 16:28:55,204 - __main__ - INFO - Selected language: language_java
+2023-09-01 16:28:55,318 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 55, in select_language
+    await context.bot.edit_message_text(chat_id=update.callback_query.message.chat_id,
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 1493, in edit_message_text
+    return await super().edit_message_text(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 3388, in edit_message_text
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message to edit not found
+2023-09-01 16:28:56,569 - __main__ - INFO - Selected language: language_cpp
+2023-09-01 16:28:56,683 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 55, in select_language
+    await context.bot.edit_message_text(chat_id=update.callback_query.message.chat_id,
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 1493, in edit_message_text
+    return await super().edit_message_text(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 3388, in edit_message_text
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message to edit not found
+2023-09-01 16:29:08,172 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 16:29:08,172 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 16:30:06,836 - telegram.ext.Application - INFO - Application started
+2023-09-01 16:30:10,631 - __main__ - INFO - Selected language: language_python
+2023-09-01 16:30:10,849 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 55, in select_language
+    await context.bot.edit_message_text(chat_id=update.callback_query.message.chat_id,
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 1493, in edit_message_text
+    return await super().edit_message_text(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 3388, in edit_message_text
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message to edit not found
+2023-09-01 16:30:16,729 - __main__ - INFO - Selected language: language_java
+2023-09-01 16:30:17,013 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 55, in select_language
+    await context.bot.edit_message_text(chat_id=update.callback_query.message.chat_id,
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 1493, in edit_message_text
+    return await super().edit_message_text(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 3388, in edit_message_text
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message to edit not found
+2023-09-01 16:30:18,174 - __main__ - INFO - Selected language: language_cpp
+2023-09-01 16:30:18,310 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 55, in select_language
+    await context.bot.edit_message_text(chat_id=update.callback_query.message.chat_id,
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 1493, in edit_message_text
+    return await super().edit_message_text(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 3388, in edit_message_text
+    return await self._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 514, in _send_message
+    result = await super()._send_message(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 566, in _send_message
+    result = await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message to edit not found
+2023-09-01 16:31:04,574 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 16:31:04,574 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-01 16:33:52,943 - telegram.ext.Application - INFO - Application started
+2023-09-01 16:34:00,880 - __main__ - INFO - Selected language: language_python
+2023-09-01 16:34:00,880 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 54, in select_language
+    markup = create_button_markup([buttons])
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\Button_Markup.py", line 22, in create_button_markup
+    keyboard = [[button.get_button()] for button in buttons]
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\Button_Markup.py", line 22, in <listcomp>
+    keyboard = [[button.get_button()] for button in buttons]
+AttributeError: 'list' object has no attribute 'get_button'
+2023-09-01 16:34:17,314 - __main__ - INFO - Selected language: language_python
+2023-09-01 16:34:17,314 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 54, in select_language
+    markup = create_button_markup([buttons])
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\Button_Markup.py", line 22, in create_button_markup
+    keyboard = [[button.get_button()] for button in buttons]
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\Button_Markup.py", line 22, in <listcomp>
+    keyboard = [[button.get_button()] for button in buttons]
+AttributeError: 'list' object has no attribute 'get_button'
+2023-09-01 16:34:20,632 - __main__ - INFO - Selected language: language_java
+2023-09-01 16:34:20,632 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\main.py", line 54, in select_language
+    markup = create_button_markup([buttons])
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\Button_Markup.py", line 22, in create_button_markup
+    keyboard = [[button.get_button()] for button in buttons]
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\Button_Markup.py", line 22, in <listcomp>
+    keyboard = [[button.get_button()] for button in buttons]
+AttributeError: 'list' object has no attribute 'get_button'
+2023-09-01 16:34:27,957 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-01 16:34:27,958 - telegram.ext.Application - INFO - Application.stop() complete

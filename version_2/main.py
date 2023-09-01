@@ -1,11 +1,11 @@
 import logging
-from telegram import Update
-from telegram.ext import CallbackContext, filters, ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, \
-    CallbackQueryHandler
+from telegram import Update, ReplyKeyboardRemove
+from telegram.ext import CallbackContext, ContextTypes, CommandHandler, CallbackQueryHandler, ConversationHandler, \
+    Application
 from access import API_TOKEN
-from version_1.hash_table import python_hash_table
-from Button import *
-
+from Button_Markup import *
+from dataBase import get_info_from_db
+from topis import get_topics_for_language
 
 # Enable logging
 logging.basicConfig(filename='../bot.log',
@@ -16,6 +16,14 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 
 logger = logging.getLogger(__name__)
 
+# Define conversation states
+SELECT_LANGUAGE = 1
+SELECT_TOPIC = 2
+
+# Global variables to store selected language and topic
+selected_language = None
+selected_topic = None
+
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Send message on '/start'"""
@@ -23,219 +31,65 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.message.from_user
     logger.info("User %s started the conversation!", user.full_name, user.first_name)
 
-    keyboard = [
-        [
-            InlineKeyboardButton("Python", callback_data='Python', ),
-            InlineKeyboardButton("Java", callback_data='Java'),
-        ],
-        [InlineKeyboardButton("C++", callback_data='C++')]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await context.bot.send_message(chat_id=update.message.chat_id, reply_markup=reply_markup, text='Choose Language')
+    PythonButton = InlineKeyboardButton("Python \U0001F40D", callback_data="language_python")
+    JavaButton = InlineKeyboardButton("Java \U0001F525", callback_data="language_java")
+    CppButton = InlineKeyboardButton("C++ \U0001F5A5", callback_data="language_cpp")
+    markup = InlineKeyboardMarkup([[PythonButton], [JavaButton], [CppButton]])
+    await context.bot.send_message(chat_id=update.message.chat_id, reply_markup=markup, text='Choose Language')
+    return SELECT_LANGUAGE
 
 
-async def button(update: Update, context: CallbackContext):
-    query = update.callback_query
-    data = query.data
+# Define a function to handle language selection
+async def select_language(update: Update, context: CallbackContext):
+    global selected_language
+    selected_language = update.callback_query.data
+    print(selected_language)
+    """
+    create sub_buttons for topics related to the selected language
+    """
+    logger.info("Selected language: %s", selected_language)
+    topics = get_topics_for_language(selected_language)  # Define a function to retrieve topics
+    buttons = [ButtonMarkup(topic, f"topic_{topic}") for topic in topics]
+    print(topics)
+    markup = create_button_markup([buttons])
+    print(markup)
+    await context.bot.edit_message_text(chat_id=update.callback_query.message.chat_id,
+                                        message_id=update.callback_query.message.chat_id, text="Choose a Topic: ",
+                                        reply_markup=markup)
+    return SELECT_TOPIC
 
-    python_button = MyInlineKeyBoard(
-        [
-            MyInlineButton("for", callbackData='for'),
-            MyInlineButton("while", callbackData='while'),
-            MyInlineButton("def", callbackData='def'),
-            MyInlineButton("generator", callbackData='generator'),
-            MyInlineButton('Numbers', callbackData='Numbers')
-        ],
-        [
-            MyInlineButton("tuple", callbackData='tuple'),
-            MyInlineButton("dictionary", callbackData='dictionary'),
-            MyInlineButton("lambda", callbackData='lambda')
-        ],
-        [
-            MyInlineButton("array", callbackData='array'),
-            MyInlineButton("str", callbackData='str'),
-            MyInlineButton("bool", callbackData='bool')
-        ],
-        [
-            MyInlineButton("class", callbackData='class'),
-            MyInlineButton("polymorphism", callbackData='polymorphism'),
-            MyInlineButton("inheritance", callbackData='inheritance')
-        ]
-    )
 
-    markup_button = python_button.get_keyboard()
+async def select_topic(update: Update, context: CallbackContext):
+    global selected_language, selected_topic
+    selected_topic = update.callback_query.data
 
-    if data == 'Python':
-        await query.edit_message_text(text='Python', reply_markup=markup_button)
-    elif data == 'for':
-        info = python_hash_table.get(data)
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        # await query.answer(text=info, show_alert=True)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'while':
-        info = python_hash_table.get('while')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'def':
-        info = python_hash_table.get('def')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'array':
-        info = python_hash_table.get('array')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'list':
-        info = python_hash_table.get('list')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'tuple':
-        info = python_hash_table.get('tuple')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        # await query.answer(text=info, show_alert=True)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'generator':
-        info = python_hash_table.get('generator')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'dictionary':
-        info = python_hash_table.get('dictionary')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        # await query.answer(text=info, show_alert=True)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'lambda':
-        info = python_hash_table.get('lambda')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'str':
-        info = python_hash_table.get('str')
-        info = python_hash_table.get('inheritance')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'bool':
-        info = python_hash_table.get('bool')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        # await query.answer(text=info, show_alert=True)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'class':
-        info = python_hash_table.get('class')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        # await query.answer(text=info, show_alert=True)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'polymorphism':
-        info = python_hash_table.get('polymorphism')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'inheritance':
-        info = python_hash_table.get('inheritance')
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        # await query.answer(text=info, show_alert=True)
-        await query.edit_message_text(text=info, reply_markup=back_button)
-    elif data == 'back':
-        await query.edit_message_text(text='Python', reply_markup=markup_button)
+    # Retrieve from the database based on the selected language
+    info = get_info_from_db(selected_language, selected_topic)
 
-    if data == 'Java':
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        await query.edit_message_text(text=f"Selected option: {query.data},\n Sorry, but updating still in progress!"
-                                           f" "f"Try other commands! ", reply_markup=back_button)
-
-    if data == 'C++':
-        back = [
-            [InlineKeyboardButton("back", callback_data="back")]
-        ]
-        back_button = InlineKeyboardMarkup(back)
-        await query.edit_message_text(text=f"Selected option: {query.data},\n Sorry, but updating still in progress! "
-                                           f"Try other commands! ", reply_markup=back_button)
+    if info:
+        await update.callback_query.edit_message_text(f"\U00002705Info -->{info}", reply_markup=ReplyKeyboardRemove())
+    else:
+        await update.callback_query.edit_message_text("Information not found\U00002757",
+                                                      reply_markup=ReplyKeyboardRemove())
+    return ConversationHandler.END
 
 
 async def help_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
-    await updater.message.reply_text("Hi! We have few different ways of working our bot: Use one of the follow "
-                                     "command to get more information: (Without asteriks)\n "
-                                     "* for\n"
-                                     "* for_statement_example\n"
-                                     "* while\n"
-                                     "* while_example\n"
-                                     "* tuple\n"
-                                     "* def\n"
-                                     "* list\n"
-                                     "* array\n"
-                                     "* generator\n"
-                                     "* dictionary\n"
-                                     "* lambda\n"
-                                     "* Numbers\n"
-                                     "* str\n"
-                                     "* bool\n"
-                                     "* class\n"
-                                     "* polymorphism\n"
-                                     "* inheritance\n"
-                                     "or you can use Inline Buttons! Good luck!")
-
-
-async def message_(updater: Update, context: ContextTypes.DEFAULT_TYPE):
-    msg = updater.message.text
-    # print(msg)
-    ans = python_hash_table.get(msg)
-    if ans:
-        await updater.message.reply_text(ans)  # python_hash_table.get(msg)
-    else:
-        await updater.message.reply_text("Oops something went wrong, try again!")
+    await updater.message.reply_text("Welcome to Professional Bot for Programmers! This bot is easy in work. Just tap "
+                                     "on any button you want!")
 
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token(API_TOKEN).build()
+    application = Application.builder().token(API_TOKEN).build()
 
-    start_handler = CommandHandler('start', start)
+    conv_handler = ConversationHandler(
+        entry_points=[CommandHandler('start', start)],
+        states={
+            SELECT_LANGUAGE: [CallbackQueryHandler(select_language, pattern='^language_.*')],
+            SELECT_TOPIC: [CallbackQueryHandler(select_topic)], }, fallbacks=[])
     help_handler = CommandHandler('help', help_)
-    button_handler = CallbackQueryHandler(button)
 
-    application.add_handler(button_handler)
-    application.add_handler(start_handler)
     application.add_handler(help_handler)
+    application.add_handler(conv_handler)
 
-    application.add_handler(MessageHandler(filters.TEXT, message_))
-
-    application.run_polling()
+    application.run_polling(allowed_updates=Update.ALL_TYPES)

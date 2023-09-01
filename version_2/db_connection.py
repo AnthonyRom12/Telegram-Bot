@@ -1,15 +1,15 @@
 import psycopg2
-from access import host, user, password, db_name
+from access import HOST, USER, PASSWORD, DB_NAME
 
 connection = None
 
 try:
     # connect to exist database
     connection = psycopg2.connect(
-        host=host,
-        user=user,
-        password=password,
-        database=db_name
+        host=HOST,
+        user=USER,
+        password=PASSWORD,
+        database=DB_NAME
     )
     connection.autocommit = True
 
