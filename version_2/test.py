@@ -1,75 +1,109 @@
 import logging
-from telegram import Update, ReplyKeyboardRemove
-from telegram.ext import CallbackContext, ContextTypes, CommandHandler, CallbackQueryHandler, ConversationHandler, \
-    Application
-from access import API_TOKEN
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, MessageHandler, filters, CallbackContext, Application, \
+    InlineQueryHandler, ContextTypes, CallbackQueryHandler
 from Button_Markup import *
-from dataBase import get_info_from_db
-from topis import get_topics_for_language
-
+import psycopg2
+from access import API_TOKEN, HOST, USER, PASSWORD, DB_NAME
 
 # Enable logging
-logging.basicConfig(
-    filename='../bot.log',
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    level=logging.INFO
-)
+logging.basicConfig(filename='../bot.log',
+                    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
+                    )
+# set higher logging level for httpx to avoid all GET and POST requests being logged
+logging.getLogger("httpx").setLevel(logging.WARNING)
+
 logger = logging.getLogger(__name__)
-# Global variables to store selected language and topic
-SELECT_LANGUAGE = 1
-SELECT_TOPIC = 2
-selected_language = None
-selected_topic = None
 
-# Your ButtonMarkup, get_topics_for_language, and get_info_from_db functions here
+# Initialize your PostgreSQL connection
+conn = psycopg2.connect(
+    database=DB_NAME,
+    user=USER,
+    password=PASSWORD,
+    host=HOST,
+)
+cursor = conn.cursor()
 
-async def start(update: Update, context: CallbackContext):
+
+# Define the /start command handler
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send message on '/start'"""
-    user = update.message.from_user
+    # Get user that sent /start and log his name
+    user = update.effective_user
     logger.info("User %s started the conversation!", user.full_name, user.first_name)
+    await context.bot.send_message(
+        chat_id=update.message.chat_id,
+        text=f"Hello {user.mention_html()}!\n"
+             "Welcome to your bot. Please use the following commands:\n"
+             "/Python - Learn Python\n"
+             "/Java - Learn Java\n"
+             "/Cpp - Learn C++\n"
+             "/help - Show help",
+        parse_mode="HTML",
+    )
 
-    PythonButton, JavaButton, CppButton = ButtonMarkup("Python \U0001F40D"), ButtonMarkup(
-        "Java \U0001F525"), ButtonMarkup("C++ \U0001F5A5")
-    markup = create_button_markup([PythonButton, JavaButton, CppButton])
 
-    await context.bot.send_message(chat_id=update.message.chat_id, reply_markup=markup, text='Choose Language')
-    return SELECT_LANGUAGE
+# Define the /help command handler
+async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("This is a help message. You can use /start, /Python, /Java, or /Cpp commands.")
 
-async def select_language(update: Update, context: CallbackContext):
-    global selected_language
-    selected_language = update.callback_query.data
-    logger.info("Selected language: %s", selected_language)
 
-    topics = get_topics_for_language(selected_language)
-    buttons = [ButtonMarkup(topic) for topic in topics]
-    markup = create_button_markup(buttons)
-    await update.callback_query.edit_message_text("Choose a Topic: ", reply_markup=markup)
-    return SELECT_TOPIC
+# Define the /Python, /Java, and /Cpp command handlers
+async def handle_language(update: Update, context: CallbackContext):
+    keyboard = [
+        [InlineKeyboardButton("str", callback_data='topic_str'),
+         InlineKeyboardButton("Numbers", callback_data='topic_Numbers')],
+        [InlineKeyboardButton("Functions", callback_data='topic_Functions'),
+         InlineKeyboardButton("OOP", callback_data='topic_OOP')],
+        [InlineKeyboardButton("More...", callback_data='topic_More')],
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    #  -------------------
+    context.user_data['chosen_language'] = update.message.text[1:]
+    await update.message.reply_text('Choose a topic:', reply_markup=reply_markup)
 
-async def select_topic(update: Update, context: CallbackContext):
-    global selected_language, selected_topic
-    selected_topic = update.callback_query.data
 
-    info = get_info_from_db(selected_language, selected_topic)
+# Define the callback query handler for topic buttons
+async def handle_topic(update: Update, context: CallbackContext):
+    query = update.callback_query
+    topic = query.data.replace('topic_', '')
 
-    if info:
-        await update.callback_query.edit_message_text(f"\U00002705Info -->{info}", reply_markup=ReplyKeyboardRemove())
+    chosen_language = context.user_data.get('chosen_language')
+    # Retrieve information from the PostgreSQL database
+    cursor.execute("SELECT explanation FROM info_table WHERE language = %s AND topic = %s", (chosen_language, topic))
+    result = cursor.fetchone()
+
+    if result:
+        explanation = result[0]
+        await query.answer(explanation)
     else:
-        await update.callback_query.edit_message_text("Information not found\U00002757",
-                                                      reply_markup=ReplyKeyboardRemove())
-    return ConversationHandler.END
+        await query.answer("Topic not found.")
 
-if __name__ == '__main__':
+
+# Create the main function to run the bot
+def main():
     application = Application.builder().token(API_TOKEN).build()
 
-    conv_handler = ConversationHandler(
-        entry_points=[CommandHandler('start', start)],
-        states={
-            SELECT_LANGUAGE: [CallbackQueryHandler(select_language, pattern='^language_.*')],
-            SELECT_TOPIC: [CallbackQueryHandler(select_topic)],
-        },
-        fallbacks=[]
-    )
-    application.add_handler(conv_handler)
+    start_handler = CommandHandler('start', start)
+    application.add_handler(start_handler)
+
+    help_handler = CommandHandler('help', help_command)
+    application.add_handler(help_handler)
+
+    python_handler = CommandHandler("Python", handle_language)
+    application.add_handler(python_handler)
+
+    java_handler = CommandHandler("Java", handle_language)
+    application.add_handler(java_handler)
+
+    cpp_handler = CommandHandler("Cpp", handle_language)
+    application.add_handler(cpp_handler)
+
+    topics_handler = CallbackQueryHandler(handle_topic)
+    application.add_handler(topics_handler)
 
     application.run_polling(allowed_updates=Update.ALL_TYPES)
+
+
+if __name__ == '__main__':
+    main()

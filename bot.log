@@ -594,3 +594,189 @@ Traceback (most recent call last):
 AttributeError: 'list' object has no attribute 'get_button'
 2023-09-01 16:34:27,957 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
 2023-09-01 16:34:27,958 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-05 21:13:37,592 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getMe "HTTP/1.1 200 OK"
+2023-09-05 21:13:37,673 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/deleteWebhook "HTTP/1.1 200 OK"
+2023-09-05 21:13:37,674 - telegram.ext.Application - INFO - Application started
+2023-09-05 21:13:45,724 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:13:45,741 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\test.py", line 31, in start
+    PythonButton, JavaButton, CppButton = ButtonMarkup("Python \U0001F40D"), ButtonMarkup(
+TypeError: ButtonMarkup.__init__() missing 1 required positional argument: 'callback_data'
+2023-09-05 21:13:55,819 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:13:58,207 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:14:08,286 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:14:11,259 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:14:11,263 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\test.py", line 31, in start
+    PythonButton, JavaButton, CppButton = ButtonMarkup("Python \U0001F40D"), ButtonMarkup(
+TypeError: ButtonMarkup.__init__() missing 1 required positional argument: 'callback_data'
+2023-09-05 21:14:21,356 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:14:31,432 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:14:41,508 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:14:51,585 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:15:01,661 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:15:11,738 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:15:21,817 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:15:29,015 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-05 21:15:29,015 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-05 21:15:30,912 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getMe "HTTP/1.1 200 OK"
+2023-09-05 21:15:31,013 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/deleteWebhook "HTTP/1.1 200 OK"
+2023-09-05 21:15:31,014 - telegram.ext.Application - INFO - Application started
+2023-09-05 21:15:35,199 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot6405460673:AAGgBw3Onotpg7BTq70vS3fZoZOns4iDl2Y/getUpdates "HTTP/1.1 200 OK"
+2023-09-05 21:15:35,208 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_conversationhandler.py", line 825, in handle_update
+    new_state: object = await handler.handle_update(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\test.py", line 31, in start
+    PythonButton, JavaButton, CppButton = ButtonMarkup("Python \U0001F40D"), ButtonMarkup(
+TypeError: ButtonMarkup.__init__() missing 1 required positional argument: 'callback_data'
+2023-09-05 21:15:41,111 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-05 21:15:41,111 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 00:20:03,200 - telegram.ext.Application - INFO - Application started
+2023-09-06 00:20:16,265 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+TypeError: object NoneType can't be used in 'await' expression
+2023-09-06 00:20:26,857 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 00:20:26,858 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 00:24:31,037 - telegram.ext.Application - INFO - Application started
+2023-09-06 00:27:43,562 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 00:27:43,563 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 00:27:44,892 - telegram.ext.Application - INFO - Application started
+2023-09-06 00:27:55,001 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\test.py", line 76, in handle_topic
+    await query.answer(explanation)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_callbackquery.py", line 180, in answer
+    return await self.get_bot().answer_callback_query(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 782, in answer_callback_query
+    return await super().answer_callback_query(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 3313, in answer_callback_query
+    return await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message_too_long
+2023-09-06 00:28:40,047 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\test.py", line 76, in handle_topic
+    await query.answer(explanation)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_callbackquery.py", line 180, in answer
+    return await self.get_bot().answer_callback_query(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 782, in answer_callback_query
+    return await super().answer_callback_query(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 3313, in answer_callback_query
+    return await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message_too_long
+2023-09-06 00:28:44,820 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 00:28:44,821 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 00:42:00,486 - telegram.ext.Application - INFO - Application started
+2023-09-06 00:42:08,915 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\test.py", line 78, in handle_topic
+    await query.answer(explanation)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_callbackquery.py", line 180, in answer
+    return await self.get_bot().answer_callback_query(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 782, in answer_callback_query
+    return await super().answer_callback_query(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 3313, in answer_callback_query
+    return await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message_too_long
+2023-09-06 00:42:46,443 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 00:42:46,443 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 00:43:16,625 - telegram.ext.Application - INFO - Application started
+2023-09-06 00:43:23,716 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\test.py", line 78, in handle_topic
+    await query.answer(explanation)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_callbackquery.py", line 180, in answer
+    return await self.get_bot().answer_callback_query(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 782, in answer_callback_query
+    return await super().answer_callback_query(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 388, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 3313, in answer_callback_query
+    return await self._post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 476, in _post
+    return await self._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_extbot.py", line 332, in _do_post
+    return await super()._do_post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\_bot.py", line 504, in _do_post
+    return await request.post(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 168, in post
+    result = await self._request_wrapper(
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\request\_baserequest.py", line 325, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message_too_long
+2023-09-06 00:43:27,667 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 00:43:27,667 - telegram.ext.Application - INFO - Application.stop() complete

@@ -5,7 +5,7 @@ from telegram.ext import CallbackContext, ContextTypes, CommandHandler, Callback
 from access import API_TOKEN
 from Button_Markup import *
 from dataBase import get_info_from_db
-from topis import get_topics_for_language
+
 
 # Enable logging
 logging.basicConfig(filename='../bot.log',
@@ -17,8 +17,7 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 logger = logging.getLogger(__name__)
 
 # Define conversation states
-SELECT_LANGUAGE = 1
-SELECT_TOPIC = 2
+SELECT_LANGUAGE, SELECT_TOPIC = range(2)
 
 # Global variables to store selected language and topic
 selected_language = None
