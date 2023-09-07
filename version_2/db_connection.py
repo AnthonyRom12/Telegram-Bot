@@ -1,5 +1,6 @@
 import psycopg2
 from access import HOST, USER, PASSWORD, DB_NAME
+import re
 
 connection = None
 
@@ -29,31 +30,47 @@ try:
     #     print("[INFO] Table created successfully")
 
     # insert data
-    # with connection.cursor() as cursor:
-    #     cursor.execute(
-    #         """INSERT INTO info_table (language, topic, explanation) VALUES ('Python', 'str', 'In Python,
-    #         the str (string) is a built-in data type that represents a sequence of characters. It is used to store
-    #         and manipulate textual data, such as words, sentences, and paragraphs. Strings are one of the fundamental
-    #         data types in Python and are treated as objects.Strings can be defined using single or double
-    #         quotes.Strings in Python are immutable, meaning once created, their contents cannot be changed. However,
-    #         you can create new strings by manipulating existing ones.Some common string operations and methods
-    #         include:1.Concatenation, 2.Indexing, 3.Slicing, 4.String methods');"""
-    #     )
-    # print("[INFO] Data was successfully inserted")
 
-    # select data
+    text = 'In Python, inheritance is a core concept in OOP. It allows a subclass to inherit attributes and methods ' \
+           'from a superclass. Key points: 1. Superclass and Subclass: Superclass provides, and subclass inherits. ' \
+           'Subclass can modify inherited elements. 2. Code Reuse: Promotes code reuse by defining shared ' \
+           'attributes/methods in the superclass. 3. Method Overriding: Subclasses can customize inherited methods. ' \
+           '4. "is-a" Relationship: Models "is-a" relationships (e.g., Car is a Vehicle). 5. Base Class Features: ' \
+           'Subclasses inherit but can add specific elements. Inheritance organizes code, encourages reuse, ' \
+           'and models class relationships. '
+
+    cleaned_text = re.sub(r'\s+', ' ', text).strip()
+    # count = 0
+    # for i in text:
+    #     count += 1
+    # print(count)
+    # print("=====================================")
+    # print(cleaned_text)
+    language = 'Python'
+    topic = 'inheritance'
+    # print("=====================================")
+    # print(text)
+    #
     with connection.cursor() as cursor:
         cursor.execute(
-            """SELECT explanation FROM info_table  WHERE language = 'Python' AND topic = 'str';"""
-        )
-        print(cursor.fetchone())
+            """INSERT INTO info_table (language, topic, explanation) VALUES (%s, %s, %s); """, (language, topic,
+                                                                                                cleaned_text))
+    print("[INFO] Data was successfully inserted")
+
+    # select data
+    # with connection.cursor() as cursor:
+    #     cursor.execute(
+    #         """SELECT explanation FROM info_table  WHERE language = 'Python' AND topic = 'str';"""
+    #     )
+    #     print(cursor.fetchone())
 
     # Delete data
     # with connection.cursor() as cursor:
     #     cursor.execute(
     #         """DELETE FROM info_table
-    #         WHERE language = 'Python';"""
+    #         WHERE language = 'Python' AND topic = 'while' ;"""
     #     )
+    # print("[INFO] DATA successfully deleted!")
 
     # with connection.cursor() as cursor:
     #     cursor.execute(
@@ -68,14 +85,3 @@ finally:
         # cursor.close()
         connection.close()
         print("[INFO] PostgreSQL connection closed")
-
-a = 'In Python, the str (string) is a built-in data type that represents a sequence of characters. It is used to ' \
-    'store and manipulate textual data, such as words, sentences, and paragraphs. Strings are one of the fundamental ' \
-    'data types in Python and are treated as objects.Strings can be defined using single or doublequotes.Strings in ' \
-    'Python are immutable, meaning once created, their contents cannot be changed. However, you can create new ' \
-    'strings by manipulating existing ones.Some common string operations and methods include:1. Concatenation, ' \
-    '2. Indexing, 3. Slicing, 4. String methods '
-count = 0
-for i in a:
-    count += 1
-print(count)

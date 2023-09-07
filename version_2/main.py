@@ -53,9 +53,14 @@ async def handle_language(update: Update, context: CallbackContext):
     keyboard = [
         [InlineKeyboardButton("str", callback_data='topic_str'),
          InlineKeyboardButton("Numbers", callback_data='topic_Numbers')],
-        [InlineKeyboardButton("Functions", callback_data='topic_Functions'),
-         InlineKeyboardButton("OOP", callback_data='topic_OOP')],
-        [InlineKeyboardButton("More...", callback_data='topic_More')],
+        [InlineKeyboardButton("while", callback_data='topic_while'),
+         InlineKeyboardButton("for", callback_data='topic_for')],
+        [InlineKeyboardButton("function", callback_data='topic_function'),
+         InlineKeyboardButton("bool", callback_data='topic_bool'),
+         InlineKeyboardButton("array", callback_data='topic_array')],
+        [InlineKeyboardButton("class", callback_data='topic_class'),
+         InlineKeyboardButton("polymorphism", callback_data='topic_polymorphism'),
+         InlineKeyboardButton("inheritance", callback_data='topic_inheritance')]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     #  -------------------
@@ -129,3 +134,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
