@@ -15,7 +15,7 @@ CodeWithMe is a Telegram bot that provides useful information for developers in 
 
 4. The bot will provide you with reference materials, code examples, and links to useful resources for the selected programming language.
 
-5. You can also input keywords to get information. Example commands:
+5. You can also in version 1 input keywords to get information. Example commands:
    - `generator`- information about Python generators.
    - `dictionary` - information about Python dictionaries.
 
@@ -23,6 +23,9 @@ CodeWithMe is a Telegram bot that provides useful information for developers in 
 
 - `/start` - Start a chat with the bot.
 - `/help` - Get help about available commands.
+- `/Python` - Get Information Keyboard for Python.
+- `/Java` - Get Information Keyboard for Java.
+- `/C++` - Get Information Keyboard for C++.
 
 ## Interacting with the Bot
 
