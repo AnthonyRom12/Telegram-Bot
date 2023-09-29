@@ -51,7 +51,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Define the /Python, /Java, and /Cpp command handlers
 async def handle_language(update: Update, context: CallbackContext):
     keyboard = [
-        [InlineKeyboardButton("str", callback_data='topic_str'),
+        [InlineKeyboardButton("str", callback_data='topic_str'), 
          InlineKeyboardButton("Numbers", callback_data='topic_Numbers')],
         [InlineKeyboardButton("while", callback_data='topic_while'),
          InlineKeyboardButton("for", callback_data='topic_for')],

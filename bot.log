@@ -780,3 +780,120 @@ Traceback (most recent call last):
 telegram.error.BadRequest: Message_too_long
 2023-09-06 00:43:27,667 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
 2023-09-06 00:43:27,667 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 22:50:50,737 - telegram.ext.Application - INFO - Application started
+2023-09-06 22:51:27,556 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 22:51:27,556 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 22:57:43,161 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:06:17,226 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:06:17,226 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:07:40,964 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:10:58,102 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:10:58,102 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:11:28,322 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:12:23,979 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:12:23,979 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:12:25,123 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:12:49,013 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:12:49,013 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:12:50,150 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:13:34,064 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:13:34,064 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:13:35,085 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:15:14,792 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:15:14,792 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:15:15,811 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:16:30,078 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:16:30,078 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:16:31,092 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:17:05,236 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:17:05,236 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:17:26,889 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:17:41,535 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:17:41,535 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:20:28,745 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:21:18,684 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:21:18,684 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:21:19,928 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:28:45,653 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:28:45,653 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:28:46,888 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:29:36,409 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:29:36,409 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:32:33,757 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:32:53,172 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:32:53,172 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:34:14,653 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:34:41,007 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:34:41,007 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:34:42,048 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:34:45,621 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\test.py", line 94, in bact_to_topic_selection
+    await query.edit_message_text(text='Choose a topic: ', reply_markup=handle_language(chosen_language))
+TypeError: handle_language() missing 1 required positional argument: 'context'
+2023-09-06 23:34:55,451 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_application.py", line 1173, in process_update
+    await coroutine
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\venv\lib\site-packages\telegram\ext\_basehandler.py", line 141, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\PycharmProjects\Telegram_Programmig_Bot\version_2\test.py", line 94, in bact_to_topic_selection
+    await query.edit_message_text(text='Choose a topic: ', reply_markup=handle_language(chosen_language))
+TypeError: handle_language() missing 1 required positional argument: 'context'
+2023-09-06 23:35:27,643 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:35:27,643 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:35:35,333 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:35:46,901 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:35:46,901 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-06 23:36:47,856 - telegram.ext.Application - INFO - Application started
+2023-09-06 23:36:58,977 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-06 23:36:58,977 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-07 13:12:44,565 - telegram.ext.Application - INFO - Application started
+2023-09-07 13:13:17,014 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-07 13:13:17,014 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-07 21:22:01,874 - telegram.ext.Application - INFO - Application started
+2023-09-07 21:22:05,306 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-07 21:22:05,306 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-07 21:50:44,573 - telegram.ext.Application - INFO - Application started
+2023-09-07 21:51:02,554 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-07 21:51:02,555 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-07 21:51:21,230 - telegram.ext.Application - INFO - Application started
+2023-09-07 21:51:31,870 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-07 21:51:31,871 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-07 21:57:11,120 - telegram.ext.Application - INFO - Application started
+2023-09-07 21:57:26,103 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-07 21:57:26,105 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-07 22:02:24,557 - telegram.ext.Application - INFO - Application started
+2023-09-07 22:02:38,128 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-07 22:02:38,128 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-07 22:08:29,191 - telegram.ext.Application - INFO - Application started
+2023-09-07 22:08:37,970 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-07 22:08:37,971 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-07 22:21:51,981 - telegram.ext.Application - INFO - Application started
+2023-09-07 22:22:23,150 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-07 22:22:23,150 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-07 22:24:38,685 - telegram.ext.Application - INFO - Application started
+2023-09-07 22:24:52,566 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-07 22:24:52,567 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-07 22:28:25,697 - telegram.ext.Application - INFO - Application started
+2023-09-07 22:28:28,000 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-07 22:28:28,001 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-07 23:02:50,214 - telegram.ext.Application - INFO - Application started
+2023-09-07 23:15:59,291 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-07 23:15:59,292 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-08 11:09:12,676 - telegram.ext.Application - INFO - Application started
+2023-09-08 11:14:08,410 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-08 11:14:08,411 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-17 10:43:16,758 - telegram.ext.Application - INFO - Application started
+2023-09-17 10:44:33,515 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-17 10:44:33,516 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-29 12:25:56,697 - telegram.ext.Application - INFO - Application started
+2023-09-29 12:27:12,411 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-29 12:27:12,411 - telegram.ext.Application - INFO - Application.stop() complete
+2023-09-29 12:29:26,835 - telegram.ext.Application - INFO - Application started
+2023-09-29 12:29:29,915 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2023-09-29 12:29:29,916 - telegram.ext.Application - INFO - Application.stop() complete
